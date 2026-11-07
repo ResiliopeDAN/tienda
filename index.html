@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moda Juliaca · Colección Altiplano</title>
+<meta name="description" content="Casaca juvenil, polo casual y pantalón jean de la nueva colección Altiplano. Elige tu prenda y pídela por WhatsApp.">
+<meta name="theme-color" content="#16140f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Moda Juliaca · Colección Altiplano">
+<meta property="og:description" content="Ropa para jóvenes y adultos. Mira el catálogo y pide por WhatsApp.">
+<meta property="og:image" content="img/og-image.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#catalogo">Saltar al catálogo</a>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="Moda Juliaca, inicio">MODA JULIACA</a>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#pedidos">Pedidos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="tools">
+      <button class="cart-btn" id="abrir-carrito" type="button" aria-label="Abrir mi pedido">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" id="contador" aria-live="polite">0</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ INICIO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-media" aria-hidden="true">
+    <img src="img/hero.jpg" alt="" width="1920" height="1080" fetchpriority="high">
+  </div>
+  <div class="wrap hero-copy">
+    <p class="kicker" data-hero>Nueva colección Altiplano</p>
+    <h1 data-hero><span>Ropa de Juliaca</span> <span>para todos los días.</span></h1>
+    <p class="lead" data-hero>Casaca, polo y jean para jóvenes y adultos. Elige tu prenda y pídela por WhatsApp en minutos.</p>
+    <div class="actions" data-hero>
+      <a class="btn btn-light" href="#catalogo">Ver catálogo</a>
+      <a class="btn btn-line" href="#pedidos">Cómo pedir</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#catalogo" aria-label="Bajar al catálogo"><span></span></a>
+</section>
+
+<!-- ============ FRANJA ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Colección Altiplano</span><span>Tallas S a XL</span><span>Pedidos por WhatsApp</span><span>Casaca · Polo · Jean</span>
+    <span>Colección Altiplano</span><span>Tallas S a XL</span><span>Pedidos por WhatsApp</span><span>Casaca · Polo · Jean</span>
+  </div>
+</div>
+
+<!-- ============ CATÁLOGO ============ -->
+<section class="sec" id="catalogo">
+  <div class="wrap">
+    <header class="sec-head" data-reveal>
+      <h2>Catálogo</h2>
+      <p>Tres prendas para empezar. Toca una para ver el detalle, elegir talla y agregarla a tu pedido.</p>
+    </header>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- ============ LOOK ============ -->
+<section class="sec sec-dark" id="look">
+  <div class="wrap split">
+    <div class="split-img" data-reveal="left">
+      <img src="img/look-trio.jpg" alt="Casaca juvenil, polo casual y pantalón jean de la colección" width="1500" height="1200" loading="lazy">
+    </div>
+    <div class="split-txt" data-reveal>
+      <h2>El look completo</h2>
+      <p>Casaca, polo y jean juntos. La combinación que más nos piden para el frío de la mañana y el sol de la tarde.</p>
+      <ul class="look-list" id="look-list"></ul>
+      <button class="btn btn-light" id="pedir-look" type="button">Agregar el look al pedido</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PEDIDOS ============ -->
+<section class="sec" id="pedidos">
+  <div class="wrap">
+    <header class="sec-head" data-reveal>
+      <h2>Cómo pedir</h2>
+      <p>Sin pagos en línea. Armas tu pedido aquí y lo envías por WhatsApp para coordinar.</p>
+    </header>
+    <ol class="steps">
+      <li data-reveal><span class="num">01</span><h3>Elige tu prenda</h3><p>Abre el detalle, escoge talla y cantidad.</p></li>
+      <li data-reveal style="--d:.1s"><span class="num">02</span><h3>Revisa tu pedido</h3><p>Verás el total referencial en soles.</p></li>
+      <li data-reveal style="--d:.2s"><span class="num">03</span><h3>Envíalo por WhatsApp</h3><p>Te respondemos para confirmar disponibilidad.</p></li>
+    </ol>
+    <p class="center" data-reveal><button class="btn btn-dark" id="abrir-carrito-2" type="button">Ver mi pedido</button></p>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS ============ -->
+<section class="sec sec-soft" id="nosotros">
+  <div class="wrap split split-rev">
+    <div class="split-img" data-reveal="right">
+      <img src="img/nosotros.jpg" alt="Interior de la tienda con ropa en percheros y estantes" width="1200" height="1500" loading="lazy">
+    </div>
+    <div class="split-txt" data-reveal>
+      <h2>Moda Juliaca</h2>
+      <p>Tienda de ropa para jóvenes y adultos. Prendas cómodas, resistentes y fáciles de combinar, pensadas para el clima del Altiplano.</p>
+      <p class="muted">Tienda ficticia creada para una práctica de laboratorio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="sec" id="contacto">
+  <div class="wrap">
+    <header class="sec-head" data-reveal>
+      <h2>Atención al cliente</h2>
+    </header>
+    <div class="contact">
+      <div class="info" data-reveal>
+        <div><h3>Ubicación</h3><p>Jr. San Román<br>Juliaca, Puno (referencial)</p></div>
+        <div><h3>Horario</h3><p>Lunes a sábado<br>9:00 a. m. a 7:00 p. m.</p></div>
+        <div><h3>Consultas</h3><p><a id="wa-contacto" href="#" target="_blank" rel="noopener">WhatsApp</a><br><a href="mailto:servicio@modajuliaca.pe">hola@modajuliaca.example</a></p></div>
+      </div>
+      <div class="map" data-reveal="right">
+        <iframe title="Mapa referencial de Juliaca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Juliaca,+Puno,+Per%C3%BA&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <strong>MODA JULIACA</strong>
+    <nav aria-label="Pie"><a href="#catalogo">Catálogo</a><a href="#pedidos">Pedidos</a><a href="#contacto">Contacto</a></nav>
+    <small>© 2026 Moda Juliaca · Tienda ficticia para práctica de laboratorio</small>
+  </div>
+</footer>
+
+<!-- ============ DETALLE DE PRODUCTO ============ -->
+<dialog id="detalle" class="modal" aria-labelledby="d-nombre">
+  <button class="modal-x" id="cerrar-detalle" type="button" aria-label="Cerrar detalle">×</button>
+  <div class="modal-body">
+    <div class="gallery">
+      <div class="gallery-main"><img id="d-foto" src="" alt="" width="1200" height="1500"></div>
+      <div class="thumbs" id="d-thumbs"></div>
+    </div>
+    <div class="modal-info">
+      <h3 id="d-nombre"></h3>
+      <p class="price" id="d-precio"></p>
+      <p id="d-desc"></p>
+      <ul class="feat" id="d-feat"></ul>
+      <fieldset class="sizes"><legend>Talla</legend><div id="d-tallas"></div></fieldset>
+      <div class="qty-row">
+        <span class="qty-label">Cantidad</span>
+        <div class="qty">
+          <button type="button" id="menos" aria-label="Quitar una unidad">−</button>
+          <output id="cant" aria-live="polite">1</output>
+          <button type="button" id="mas" aria-label="Agregar una unidad">+</button>
+        </div>
+      </div>
+      <button class="btn btn-dark btn-full" id="agregar" type="button">Agregar al pedido</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- ============ CARRITO ============ -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Mi pedido" aria-hidden="true">
+  <div class="drawer-head"><h3>Mi pedido</h3><button type="button" id="cerrar-carrito" aria-label="Cerrar pedido">×</button></div>
+  <ul class="lines" id="lineas"></ul>
+  <p class="empty" id="vacio">Aún no agregaste prendas.</p>
+  <div class="drawer-foot">
+    <p class="total"><span>Total referencial</span><strong id="total">S/ 0.00</strong></p>
+    <a class="btn btn-dark btn-full" id="enviar-wa" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido por WhatsApp</a>
+    <button class="link-btn" id="vaciar" type="button">Vaciar pedido</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
